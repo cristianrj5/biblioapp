@@ -1,10 +1,23 @@
 body{
  background-color: #202b38;
+ background-image: url(assets/fondo_inicio.jpg);
+ background-size: cover; 
+ background-repeat: no-repeat;
  margin: 0 auto;
- font-family:'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
 font-size: 15px;
 }
+.filtros{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 15px;
+}
 
+a{
+    text-decoration: none;
+    color: #fff !important;
+}
 .cards{
     color: white;
     display: flex;
@@ -49,4 +62,27 @@ img{
     100% { transform: rotate(360deg); }
 }
 
+@media (min-width: 480px ) and (max-width: 720px) {
+  
+    body{
+        font-size: 10px;
+    }
 
+    .filtros{
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        gap: 10px;
+    }
+
+    .cards{
+        color: white;
+        display: flex;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 40% 40% ;
+        gap: 30px;
+        font-size: 20px;
+    }
+  }
+  
