@@ -65,7 +65,13 @@ img{
 @media (min-width: 480px ) and (max-width: 720px) {
   
     body{
-        font-size: 10px;
+        background-color: #202b38;
+        background-image: url(assets/fondo_inicio.jpg);
+        background-size: cover; 
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+       font-size: 15px;
     }
 
     .filtros{
