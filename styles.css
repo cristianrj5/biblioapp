@@ -1,0 +1,52 @@
+body{
+ background-color: #202b38;
+ margin: 0 auto;
+ font-family:'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 15px;
+}
+
+.cards{
+    color: white;
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    gap: 30px;
+    font-size: 20px;
+}
+
+img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+#preloader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px; /* Ancho del preloader */
+    height: 50px; /* Altura del preloader */
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente */
+    border-radius: 50%; /* Forma redondeada */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 30px; /* Ancho del spinner */
+    height: 30px; /* Altura del spinner */
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
